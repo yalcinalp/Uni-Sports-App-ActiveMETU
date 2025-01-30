@@ -1,5 +1,5 @@
-# Uni-Sports-App-METUActive
- add later
+# Uni-Sports-App-METUActive:
+The ActiveMETU app is designed to enhance the sports experience of METU members. It improves the reservation process for sports facilities in the university, allows users to track their physical activity goals and challenge other campus members, and acts as a social platform dedicated to sports communities.
 
 ## Target End-Product:
 https://github.com/user-attachments/assets/9d31c749-caa1-4e52-88f2-eef542d07208
