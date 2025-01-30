@@ -4,7 +4,7 @@ The ActiveMETU app is designed to enhance the sports experience of METU members.
 ## Target End Product:
 https://github.com/user-attachments/assets/9d31c749-caa1-4e52-88f2-eef542d07208
 
-## High Level System-View:
+## High-Level System View:
 ![High-Level-System-View](https://github.com/user-attachments/assets/c5e9c709-f0d7-4595-8545-f742b9e609a0)
 
 ## Component Diagram:
