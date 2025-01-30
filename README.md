@@ -5,7 +5,7 @@
 ## Target End-Product (Video):
 https://github.com/user-attachments/assets/9d31c749-caa1-4e52-88f2-eef542d07208
 
-## Target End-Product (Pictures):
+## Target End-Product:
 ![smth](https://github.com/user-attachments/assets/52ff13ed-8be1-4676-9cd4-d0b5daee7cfa)
 
 ![Actv](https://github.com/user-attachments/assets/e23dd4ce-a117-4ae1-9793-051e02afd6c4)
