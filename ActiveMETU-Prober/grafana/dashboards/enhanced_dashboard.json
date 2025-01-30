@@ -1,0 +1,105 @@
+{
+    "title": "Enhanced Prober Dashboard",
+    "panels": [
+      {
+        "title": "HTTP Request Rate by Method",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(http_requests_total{method=~\"GET|POST\"}[5m])",
+            "legendFormat": "{{method}}"
+          }
+        ]
+      },
+      {
+        "title": "HTTP Errors Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum(rate(http_requests_total{status=~\"5..|4..\"}[5m])) by (status)",
+            "legendFormat": "{{status}}"
+          }
+        ]
+      },
+      {
+        "title": "Request Duration Distribution",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "sum(rate(http_request_duration_seconds_bucket[5m])) by (le)",
+            "format": "heatmap"
+          }
+        ]
+      },
+      {
+        "title": "Probe Success Rate by Time Window",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(probe_success_total[1m]) / rate(probe_sent_total[1m]) * 100",
+            "legendFormat": "1m"
+          },
+          {
+            "expr": "rate(probe_success_total[5m]) / rate(probe_sent_total[5m]) * 100",
+            "legendFormat": "5m"
+          },
+          {
+            "expr": "rate(probe_success_total[15m]) / rate(probe_sent_total[15m]) * 100",
+            "legendFormat": "15m"
+          }
+        ]
+      },
+      {
+        "title": "Latency Distribution",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.50, rate(probe_latency_bucket[5m]))",
+            "legendFormat": "p50"
+          },
+          {
+            "expr": "histogram_quantile(0.90, rate(probe_latency_bucket[5m]))",
+            "legendFormat": "p90"
+          },
+          {
+            "expr": "histogram_quantile(0.95, rate(probe_latency_bucket[5m]))",
+            "legendFormat": "p95"
+          },
+          {
+            "expr": "histogram_quantile(0.99, rate(probe_latency_bucket[5m]))",
+            "legendFormat": "p99"
+          }
+        ]
+      },
+      {
+        "title": "Failed Probes Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(probe_sent_total[5m]) - rate(probe_success_total[5m])",
+            "legendFormat": "Failed Probes"
+          }
+        ]
+      },
+      {
+        "title": "HTTP Duration by Path",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(http_request_duration_seconds_sum[5m]) / rate(http_request_duration_seconds_count[5m])",
+            "legendFormat": "{{path}}"
+          }
+        ]
+      },
+      {
+        "title": "Probe Apdex Score",
+        "type": "gauge",
+        "targets": [
+          {
+            "expr": "(sum(rate(probe_latency_bucket{le=\"0.5\"}[5m])) by (job) + sum(rate(probe_latency_bucket{le=\"2\"}[5m])) by (job)) / (2 * sum(rate(probe_latency_count[5m])) by (job))",
+            "legendFormat": "Apdex"
+          }
+        ]
+      }
+    ]
+  }

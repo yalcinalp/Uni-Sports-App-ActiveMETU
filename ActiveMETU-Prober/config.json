@@ -1,0 +1,10 @@
+{
+    "ReadInterval": "3s",
+    "WriteInterval": "7s",
+    "Timeout": "10s",
+    "Port": ":8080",
+    "Endpoints": {
+        "read": "https://www.activemetu.com",
+        "write": "https://www.activemetu.com"
+    }
+}

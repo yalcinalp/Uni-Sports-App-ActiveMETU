@@ -1,0 +1,11 @@
+django
+mod_wsgi-httpd
+mod_wsgi
+psycopg
+python-dotenv
+djangorestframework
+markdown
+django-filter
+django-rest-knox
+pillow
+numpy

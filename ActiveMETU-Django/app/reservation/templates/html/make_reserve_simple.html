@@ -1,0 +1,49 @@
+<form action="" method="get">
+    <label for="Day">Which day would you like: </label><br>
+    <select name="Day" id="Day" multiple>
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="7">Sunday</option>
+    </select><br>
+
+    <label for="Slot">Which timeslot do you prefer: </label><br>
+    <select name="Slot" id="Slot" multiple>
+        <option value="070">07:00-07:30</option>
+        <option value="073">07:30-08:00</option>
+        <option value="080">08:00-08:30</option>
+        <option value="083">08:30-09:00</option>
+        <option value="090">09:00-09:30</option>
+        <option value="093">09:30-10:00</option>
+        <option value="100">10:00-10:30</option>
+        <option value="103">10:30-11:00</option>
+        <option value="110">11:00-11:30</option>
+        <option value="113">11:30-12:00</option>
+        <option value="120">12:00-12:30</option>
+        <option value="123">12:30-13:00</option>
+        <option value="130">13:00-13:30</option>
+        <option value="133">13:30-14:00</option>
+        <option value="140">14:00-14:30</option>
+        <option value="143">14:30-15:00</option>
+        <option value="150">15:00-15:30</option>
+        <option value="153">15:30-16:00</option>
+        <option value="160">16:00-16:30</option>
+        <option value="163">16:30-17:00</option>
+        <option value="170">17:00-17:30</option>
+        <option value="173">17:30-18:00</option>
+        <option value="180">18:00-18:30</option>
+        <option value="183">18:30-19:00</option>
+        <option value="190">19:00-19:30</option>
+        <option value="193">19:30-20:00</option>
+        <option value="200">20:00-20:30</option>
+        <option value="203">20:30-21:00</option>
+        <option value="210">21:00-21:30</option>           
+    </select><br>
+
+    <input type="submit" value="Reserve"><br>
+</form>
+
+<p>{{ reserve_status }}</p>
