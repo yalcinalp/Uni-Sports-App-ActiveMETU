@@ -8,18 +8,20 @@ https://github.com/user-attachments/assets/9d31c749-caa1-4e52-88f2-eef542d07208
 ## Feed:
 ![smth](https://github.com/user-attachments/assets/52ff13ed-8be1-4676-9cd4-d0b5daee7cfa)
 
-## Activity:
+## Challenge Friends:
 ![Actv](https://github.com/user-attachments/assets/e23dd4ce-a117-4ae1-9793-051e02afd6c4)
 
 ## Invite Friends:
 ![Match](https://github.com/user-attachments/assets/f66089b9-86a1-4a87-b598-d1b48f4e7c0b)
 
-
-## High-Level System View:
-![High-Level-System-View](https://github.com/user-attachments/assets/c5e9c709-f0d7-4595-8545-f742b9e609a0)
+## Make Reservation:
+![resrerv](https://github.com/user-attachments/assets/ba6dda31-d02f-4946-b422-4cb47767236a)
 
 ## Component Diagram:
 ![Component-Diagram](https://github.com/user-attachments/assets/9ab92f3d-f5c2-4f87-b379-2cc7bdff9ddc)
+
+## High-Level System View:
+![High-Level-System-View](https://github.com/user-attachments/assets/c5e9c709-f0d7-4595-8545-f742b9e609a0)
 
 ## Use Case Diagrams:
 ![1](https://github.com/user-attachments/assets/3b6b6b79-4cf1-4f06-a877-a060978f0bf9)
